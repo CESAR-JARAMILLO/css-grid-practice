@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    border: 4px solid red;
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    grid-template-rows: 15% 40% 40% 1fr;
+    justify-content: center;
+    /* align-items: center; */
+    grid-template-areas: 
+    "hd hd"
+    "main sd"
+    "main2 sd2"
+    "ftr ftr";
+}
+
+.box {
+    border: 4px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hd {
+    grid-area: hd;
+}
+
+.content {
+    /* height: 100%; */
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 50% 1fr;
+    /* justify-content: center; */
+    grid-template-areas: 
+    "bx1 bx2"
+    "bx3 bx4";
+}
+
+.bx1 {
+    height: 100%;
+    grid-area: bx1;
+    border: 4px solid green;
+    background-color: burlywood;
+}
+.bx2 {
+    height: 100%;
+    grid-area: bx2;
+    border: 4px solid green;
+    background-color: burlywood;
+}
+.bx3 {
+    height: 100%;
+    grid-area: bx3;
+    border: 4px solid green;
+    background-color: burlywood;
+}
+.bx4 {
+    height: 100%;
+    grid-area: bx4;
+    border: 4px solid green;
+    background-color: burlywood;
+}
+
+.sd {
+    grid-area: sd;
+}
+.content2 {
+    grid-area: main2;
+}
+
+.sd2 {
+    grid-area: sd2;
+}
+
+.ftr {
+    grid-area: ftr;
+}
